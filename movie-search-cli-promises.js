@@ -14,8 +14,9 @@ rp(options)
       .map((i, elm) =>
       $(elm).text())
       .toArray()
-    console.log(html)
-    return html
+    html.forEach((movie) => {
+      console.log(movie, '\n')
+    })
   })
   .catch((err) => {
     console.log(err)
